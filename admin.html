@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Admin — Briquette du Kivu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Reuse the public site's design tokens (--green, --charcoal, fonts, etc.) -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* ===== Admin-only layout, built on the shared CSS variables ===== */
+    body { background: var(--off-white); min-height: 100vh; }
+
+    .admin-shell { max-width: 1100px; margin: 0 auto; padding: 32px 5% 80px; }
+
+    .admin-topbar {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 16px; margin-bottom: 32px;
+    }
+    .admin-brand {
+      display: flex; align-items: center; gap: 10px;
+      font-family: 'Playfair Display', serif; font-weight: 700;
+      color: var(--black); font-size: 1.15rem;
+    }
+    .admin-brand .nav-logo-icon { width: 40px; height: 40px; font-size: 1.2rem; }
+    .admin-brand span { color: var(--green); }
+
+    /* ---- Login ---- */
+    .login-wrap {
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      padding: 24px;
+    }
+    .login-card {
+      background: #fff; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);
+      padding: 44px 40px; width: 100%; max-width: 400px;
+    }
+    .login-card .nav-logo-icon {
+      width: 56px; height: 56px; font-size: 1.6rem; margin: 0 auto 20px;
+    }
+    .login-card h1 {
+      font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--black);
+      text-align: center; margin-bottom: 6px;
+    }
+    .login-card p.sub {
+      text-align: center; color: var(--text-muted); font-size: 0.88rem;
+      margin-bottom: 28px; font-weight: 300;
+    }
+
+    /* ---- Cards / panels ---- */
+    .panel {
+      background: #fff; border-radius: var(--radius-lg);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.07); border: 1px solid rgba(0,0,0,0.05);
+      padding: 32px; margin-bottom: 32px;
+    }
+    .panel h2 {
+      font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--black);
+      margin-bottom: 4px;
+    }
+    .panel p.panel-sub { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 24px; font-weight: 300; }
+
+    /* form layout reuses .form-group / .form-row from styles.css */
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    @media (max-width: 760px) { .grid-3 { grid-template-columns: 1fr; } }
+
+    .checkbox-row {
+      display: flex; align-items: center; gap: 10px; margin: 4px 0 20px;
+    }
+    .checkbox-row input { width: 18px; height: 18px; accent-color: var(--green); }
+    .checkbox-row label { font-weight: 500; color: var(--black); font-size: 0.9rem; }
+
+    .form-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+    .alert {
+      border-radius: var(--radius); padding: 12px 16px; font-size: 0.88rem;
+      margin-bottom: 20px; display: none;
+    }
+    .alert.show { display: block; }
+    .alert.error { background: #fdecea; color: #b3261e; border: 1px solid #f5c6c2; }
+    .alert.success { background: var(--green-pale); color: var(--green-dark); border: 1px solid var(--green-light); }
+
+    .cover-preview {
+      width: 100%; max-height: 180px; object-fit: cover; border-radius: var(--radius);
+      margin-top: 10px; display: none; border: 1px solid rgba(0,0,0,0.08);
+    }
+    .cover-preview.show { display: block; }
+
+    /* ---- Posts list ---- */
+    .post-row {
+      display: flex; align-items: center; gap: 16px; padding: 14px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.07);
+    }
+    .post-row:last-child { border-bottom: none; }
+    .post-thumb {
+      width: 64px; height: 48px; border-radius: 8px; object-fit: cover;
+      background: var(--green-pale); flex-shrink: 0;
+    }
+    .post-main { flex: 1; min-width: 0; }
+    .post-main strong {
+      display: block; color: var(--black); font-size: 0.95rem;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .post-main .post-meta { font-size: 0.78rem; color: var(--text-muted); margin-top: 2px; }
+    .badge {
+      display: inline-block; padding: 2px 10px; border-radius: 20px;
+      font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;
+    }
+    .badge.pub { background: var(--green-pale); color: var(--green-dark); }
+    .badge.draft { background: var(--amber-light); color: #92600a; }
+    .post-actions { display: flex; gap: 8px; flex-shrink: 0; }
+
+    .btn-sm { padding: 8px 14px !important; font-size: 0.82rem !important; }
+    .btn-danger { background: #ef5350; color: #fff; }
+    .btn-danger:hover { background: #c62828; transform: translateY(-2px); }
+    .btn-ghost { background: var(--off-white); color: var(--text); border: 1px solid rgba(0,0,0,0.1); }
+    .btn-ghost:hover { background: var(--green-pale); color: var(--green); }
+
+    .muted { color: var(--text-muted); font-size: 0.88rem; font-weight: 300; }
+    .config-warning {
+      background: var(--amber-light); color: #92600a; border: 1px solid #f6d488;
+      border-radius: var(--radius); padding: 14px 18px; font-size: 0.85rem; margin-bottom: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =================== LOGIN VIEW =================== -->
+  <div id="login-view" class="login-wrap" style="display:none;">
+    <form id="login-form" class="login-card">
+      <div class="nav-logo-icon">🌿</div>
+      <h1>Briquette <span style="color:var(--green)">du Kivu</span></h1>
+      <p class="sub">Espace administrateur · Admin area</p>
+
+      <div id="config-warning" class="config-warning" style="display:none;">
+        ⚠️ Supabase n'est pas encore configuré. Renseignez <code>SUPABASE_URL</code> et
+        <code>SUPABASE_ANON_KEY</code> dans <code>supabase/supabase-config.js</code>.
+      </div>
+
+      <div id="login-alert" class="alert error"></div>
+
+      <div class="form-group">
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" autocomplete="username" placeholder="admin@briquetteduKivu.cd" required />
+      </div>
+      <div class="form-group">
+        <label for="login-password">Mot de passe · Password</label>
+        <input type="password" id="login-password" autocomplete="current-password" placeholder="••••••••" required />
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+        <i class="fas fa-right-to-bracket"></i> Se connecter
+      </button>
+    </form>
+  </div>
+
+  <!-- =================== DASHBOARD VIEW =================== -->
+  <div id="dashboard-view" class="admin-shell" style="display:none;">
+    <div class="admin-topbar">
+      <div class="admin-brand">
+        <div class="nav-logo-icon">🌿</div>
+        Briquette <span>du Kivu</span> · Admin
+      </div>
+      <div style="display:flex; align-items:center; gap:14px;">
+        <span class="muted" id="user-email"></span>
+        <button id="signout-btn" class="btn btn-ghost btn-sm">
+          <i class="fas fa-right-from-bracket"></i> Déconnexion
+        </button>
+      </div>
+    </div>
+
+    <div id="dash-alert" class="alert"></div>
+
+    <!-- Post editor -->
+    <div class="panel">
+      <h2 id="form-title">Nouvel article</h2>
+      <p class="panel-sub">Rédigez le contenu en français, anglais et swahili.</p>
+
+      <form id="post-form">
+        <input type="hidden" id="post-id" />
+
+        <div class="grid-3">
+          <div class="form-group">
+            <label for="title_fr">Titre (FR)</label>
+            <input type="text" id="title_fr" />
+          </div>
+          <div class="form-group">
+            <label for="title_en">Title (EN)</label>
+            <input type="text" id="title_en" />
+          </div>
+          <div class="form-group">
+            <label for="title_sw">Kichwa (SW)</label>
+            <input type="text" id="title_sw" />
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <div class="form-group">
+            <label for="body_fr">Contenu (FR)</label>
+            <textarea id="body_fr" style="min-height:160px;"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="body_en">Content (EN)</label>
+            <textarea id="body_en" style="min-height:160px;"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="body_sw">Maudhui (SW)</label>
+            <textarea id="body_sw" style="min-height:160px;"></textarea>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="category">Catégorie · Category</label>
+            <input type="text" id="category" placeholder="Innovation, Communauté, Environnement…" />
+          </div>
+          <div class="form-group">
+            <label for="author">Auteur · Author</label>
+            <input type="text" id="author" placeholder="Guido Murhula Zigabe" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="cover">Image de couverture · Cover image</label>
+          <input type="file" id="cover" accept="image/*" />
+          <input type="hidden" id="cover_image_url" />
+          <img id="cover-preview" class="cover-preview" alt="Aperçu" />
+        </div>
+
+        <div class="checkbox-row">
+          <input type="checkbox" id="published" />
+          <label for="published">Publié (visible sur le site) · Published</label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" id="save-btn" class="btn btn-primary">
+            <i class="fas fa-floppy-disk"></i> Enregistrer
+          </button>
+          <button type="button" id="reset-btn" class="btn btn-ghost">
+            <i class="fas fa-plus"></i> Nouveau / Réinitialiser
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Posts list -->
+    <div class="panel">
+      <h2>Tous les articles</h2>
+      <p class="panel-sub">Modifier ou supprimer les articles existants.</p>
+      <div id="posts-list"><p class="muted">Chargement…</p></div>
+    </div>
+  </div>
+
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>

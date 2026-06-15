@@ -1,0 +1,11 @@
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.log
+
+# Dependencies (none used — pure static site, but just in case)
+node_modules/
+
+# Local env files (do NOT commit service_role keys)
+.env
+.env.local

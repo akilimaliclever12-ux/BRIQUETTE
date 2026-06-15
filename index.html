@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Briquette du Kivu – Énergie Propre, Avenir Vert | Bukavu, RD Congo</title>
+  <meta name="description" content="Briquettes écologiques fabriquées à Bukavu pour lutter contre la déforestation et le changement climatique. Transforming waste into clean energy." />
+  <meta name="keywords" content="briquettes écologiques, Bukavu, Congo, énergie propre, déforestation, Guido Murhula Zigabe" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- Language Bar -->
+<div class="lang-bar">
+  <button class="lang-btn active" onclick="setLang('fr')">FR</button>
+  <button class="lang-btn" onclick="setLang('en')">EN</button>
+  <button class="lang-btn" onclick="setLang('sw')">SW</button>
+</div>
+
+<!-- Navigation -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">
+    <div class="nav-logo-icon">🌿</div>
+    <div class="nav-logo-text">Briquette<br><span>du Kivu</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#home" data-lang="fr" class="active">Accueil</a><a href="#home" data-lang="en">Home</a><a href="#home" data-lang="sw">Nyumbani</a></li>
+    <li><a href="#about" data-lang="fr" class="active">À Propos</a><a href="#about" data-lang="en">About</a><a href="#about" data-lang="sw">Kuhusu</a></li>
+    <li><a href="#products" data-lang="fr" class="active">Produits</a><a href="#products" data-lang="en">Products</a><a href="#products" data-lang="sw">Bidhaa</a></li>
+    <li><a href="#impact" data-lang="fr" class="active">Impact</a><a href="#impact" data-lang="en">Impact</a><a href="#impact" data-lang="sw">Athari</a></li>
+    <li><a href="#gallery" data-lang="fr" class="active">Galerie</a><a href="#gallery" data-lang="en">Gallery</a><a href="#gallery" data-lang="sw">Picha</a></li>
+    <li><a href="#blog" data-lang="fr" class="active">Blog</a><a href="#blog" data-lang="en">Blog</a><a href="#blog" data-lang="sw">Blogu</a></li>
+    <li><a href="#team" data-lang="fr" class="active">Équipe</a><a href="#team" data-lang="en">Team</a><a href="#team" data-lang="sw">Timu</a></li>
+    <li><a href="#partnerships" data-lang="fr" class="active">Partenariats</a><a href="#partnerships" data-lang="en">Partnerships</a><a href="#partnerships" data-lang="sw">Ushirikiano</a></li>
+    <li><a href="#reconnaissance" data-lang="fr" class="active">Reconnaissance</a><a href="#reconnaissance" data-lang="en">Recognition</a><a href="#reconnaissance" data-lang="sw">Utambuzi</a></li>
+    <li><a href="#contact" class="btn btn-primary nav-cta" data-lang="fr">Contact</a><a href="#contact" class="btn btn-primary nav-cta" data-lang="en">Contact</a><a href="#contact" class="btn btn-primary nav-cta" data-lang="sw">Wasiliana</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="#home" onclick="closeMobile()"><span data-lang="fr" class="active">Accueil</span><span data-lang="en">Home</span><span data-lang="sw">Nyumbani</span></a>
+  <a href="#about" onclick="closeMobile()"><span data-lang="fr" class="active">À Propos</span><span data-lang="en">About</span><span data-lang="sw">Kuhusu</span></a>
+  <a href="#products" onclick="closeMobile()"><span data-lang="fr" class="active">Produits</span><span data-lang="en">Products</span><span data-lang="sw">Bidhaa</span></a>
+  <a href="#impact" onclick="closeMobile()"><span data-lang="fr" class="active">Impact</span><span data-lang="en">Impact</span><span data-lang="sw">Athari</span></a>
+  <a href="#gallery" onclick="closeMobile()"><span data-lang="fr" class="active">Galerie</span><span data-lang="en">Gallery</span><span data-lang="sw">Picha</span></a>
+  <a href="#blog" onclick="closeMobile()"><span data-lang="fr" class="active">Blog</span><span data-lang="en">Blog</span><span data-lang="sw">Blogu</span></a>
+  <a href="#team" onclick="closeMobile()"><span data-lang="fr" class="active">Équipe</span><span data-lang="en">Team</span><span data-lang="sw">Timu</span></a>
+  <a href="#partnerships" onclick="closeMobile()"><span data-lang="fr" class="active">Partenariats</span><span data-lang="en">Partnerships</span><span data-lang="sw">Ushirikiano</span></a>
+  <a href="#reconnaissance" onclick="closeMobile()"><span data-lang="fr" class="active">Reconnaissance</span><span data-lang="en">Recognition</span><span data-lang="sw">Utambuzi</span></a>
+  <a href="#partners" onclick="closeMobile()"><span data-lang="fr" class="active">Partenaires</span><span data-lang="en">Partners</span><span data-lang="sw">Washirika</span></a>
+  <a href="#contact" onclick="closeMobile()"><span data-lang="fr" class="active">Contact</span><span data-lang="en">Contact</span><span data-lang="sw">Wasiliana</span></a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section id="home">
+  <div class="hero-content">
+    <div class="hero-badge">
+      <i class="fas fa-leaf"></i>
+      <span data-lang="fr" class="active">Bukavu, RD Congo · Initiative Verte</span>
+      <span data-lang="en">Bukavu, DR Congo · Green Initiative</span>
+      <span data-lang="sw">Bukavu, DRC · Mpango wa Kijani</span>
+    </div>
+    <h1 class="hero-title">
+      <span data-lang="fr" class="active">Transformer les Déchets en <em>Énergie Propre</em></span>
+      <span data-lang="en">Transforming Waste into <em>Clean Energy</em></span>
+      <span data-lang="sw">Kubadilisha Taka Kuwa <em>Nishati Safi</em></span>
+    </h1>
+    <p class="hero-sub">
+      <span data-lang="fr" class="active">Des briquettes écologiques fabriquées à Bukavu pour lutter contre la déforestation et le changement climatique. Une solution locale pour un avenir durable.</span>
+      <span data-lang="en">Eco-friendly briquettes made in Bukavu to fight deforestation and climate change. A local solution for a sustainable future.</span>
+      <span data-lang="sw">Briquettes za kimazingira zinazotengenezwa Bukavu kupambana na ukataji miti na mabadiliko ya tabianchi. Suluhisho la ndani kwa mustakabali endelevu.</span>
+    </p>
+    <div class="hero-btns">
+      <a href="https://wa.me/243000000000?text=Bonjour%2C%20je%20voudrais%20commander%20des%20briquettes" target="_blank" class="btn btn-primary">
+        <i class="fas fa-shopping-cart"></i>
+        <span data-lang="fr" class="active">Commander Maintenant</span>
+        <span data-lang="en">Order Now</span>
+        <span data-lang="sw">Agiza Sasa</span>
+      </a>
+      <a href="#partners" class="btn btn-outline">
+        <i class="fas fa-handshake"></i>
+        <span data-lang="fr" class="active">Devenir Partenaire</span>
+        <span data-lang="en">Partner With Us</span>
+        <span data-lang="sw">Kuwa Mshirika</span>
+      </a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <i class="fas fa-chevron-down"></i>
+    <span data-lang="fr" class="active">Découvrir</span>
+    <span data-lang="en">Discover</span>
+    <span data-lang="sw">Gundua</span>
+  </div>
+</section>
+
+<!-- ===== ABOUT PREVIEW ===== -->
+<section id="about-preview">
+  <div class="about-grid">
+    <div class="about-image reveal">
+      <img class="about-img-main" src="https://images.unsplash.com/photo-1569024613975-62568dafd6f2?w=800&q=80" alt="Briquettes production" />
+      <div class="about-img-badge">
+        <i class="fas fa-award"></i>
+        <div>
+          <strong>2020</strong>
+          <span data-lang="fr" class="active">Fondé à Bukavu</span>
+          <span data-lang="en">Founded in Bukavu</span>
+          <span data-lang="sw">Ilianzishwa Bukavu</span>
+        </div>
+      </div>
+    </div>
+    <div class="about-content reveal">
+      <div class="section-header">
+        <div class="section-label">
+          <span data-lang="fr" class="active">Notre Histoire</span>
+          <span data-lang="en">Our Story</span>
+          <span data-lang="sw">Historia Yetu</span>
+        </div>
+        <h2 class="section-title">
+          <span data-lang="fr" class="active">Une vision née du <em>cœur de l'Afrique</em></span>
+          <span data-lang="en">A vision born from the <em>heart of Africa</em></span>
+          <span data-lang="sw">Maono yaliyozaliwa kutoka <em>moyoni mwa Afrika</em></span>
+        </h2>
+        <p class="section-desc">
+          <span data-lang="fr" class="active">Briquette du Kivu est une initiative environnementale née à Bukavu, au cœur de la République Démocratique du Congo. Face à la déforestation massive et au manque d'accès à l'énergie propre, nous avons choisi d'agir.</span>
+          <span data-lang="en">Briquette du Kivu is an environmental initiative born in Bukavu, at the heart of the Democratic Republic of Congo. Faced with massive deforestation and lack of access to clean energy, we chose to act.</span>
+          <span data-lang="sw">Briquette du Kivu ni mpango wa mazingira ulizaliwa Bukavu, moyoni mwa Jamhuri ya Kidemokrasia ya Kongo. Mbele ya ukataji miti mkubwa na ukosefu wa nishati safi, tulichagua kutenda.</span>
+        </p>
+      </div>
+      <div class="about-founder">
+        <div class="founder-avatar">🌿</div>
+        <div class="founder-info">
+          <strong>Guido Murhula Zigabe</strong>
+          <span data-lang="fr" class="active">Fondateur & Directeur — Entrepreneur Social, Bukavu</span>
+          <span data-lang="en">Founder & Director — Social Entrepreneur, Bukavu</span>
+          <span data-lang="sw">Mwanzilishi & Mkurugenzi — Mjasiriamali wa Kijamii, Bukavu</span>
+        </div>
+      </div>
+      <a href="#about" class="btn btn-green-outline">
+        <span data-lang="fr" class="active">En savoir plus</span>
+        <span data-lang="en">Learn More</span>
+        <span data-lang="sw">Jifunze Zaidi</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== IMPACT HIGHLIGHTS ===== -->
+<section id="impact-highlights">
+  <div style="text-align:center; margin-bottom: 48px;">
+    <div class="section-label" style="justify-content:center; color: var(--green-light);">
+      <span data-lang="fr" class="active">Notre Impact</span>
+      <span data-lang="en">Our Impact</span>
+      <span data-lang="sw">Athari Yetu</span>
+    </div>
+    <h2 class="section-title" style="color:#fff; max-width:600px; margin: 0 auto;">
+      <span data-lang="fr" class="active">Des chiffres qui <em>parlent d'eux-mêmes</em></span>
+      <span data-lang="en">Numbers that <em>speak for themselves</em></span>
+      <span data-lang="sw">Nambari zinazojieleza <em>zenyewe</em></span>
+    </h2>
+  </div>
+  <div class="impact-grid" style="max-width:1200px; margin: 0 auto;">
+    <div class="impact-card reveal">
+      <div class="impact-icon"><i class="fas fa-recycle"></i></div>
+      <div class="impact-number" data-count="120">0</div>
+      <div class="impact-label">
+        <span data-lang="fr" class="active">Tonnes de déchets recyclés</span>
+        <span data-lang="en">Tons of waste recycled</span>
+        <span data-lang="sw">Tani za taka zilizosindikwa</span>
+      </div>
+    </div>
+    <div class="impact-card reveal">
+      <div class="impact-icon"><i class="fas fa-tree"></i></div>
+      <div class="impact-number" data-count="5000">0</div>
+      <div class="impact-label">
+        <span data-lang="fr" class="active">Arbres sauvés</span>
+        <span data-lang="en">Trees saved</span>
+        <span data-lang="sw">Miti iliyookolewa</span>
+      </div>
+    </div>
+    <div class="impact-card reveal">
+      <div class="impact-icon"><i class="fas fa-cloud"></i></div>
+      <div class="impact-number" data-count="80">0</div>
+      <div class="impact-label">
+        <span data-lang="fr" class="active">Tonnes de CO₂ réduites</span>
+        <span data-lang="en">Tons of CO₂ reduced</span>
+        <span data-lang="sw">Tani za CO₂ zilizopunguzwa</span>
+      </div>
+    </div>
+    <div class="impact-card reveal">
+      <div class="impact-icon"><i class="fas fa-users"></i></div>
+      <div class="impact-number" data-count="45">0</div>
+      <div class="impact-label">
+        <span data-lang="fr" class="active">Emplois créés</span>
+        <span data-lang="en">Jobs created</span>
+        <span data-lang="sw">Kazi zilizoundwa</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRODUCTS ===== -->
+<section id="products">
+  <div class="section-header center">
+    <div class="section-label">
+      <span data-lang="fr" class="active">Nos Produits & Services</span>
+      <span data-lang="en">Our Products & Services</span>
+      <span data-lang="sw">Bidhaa na Huduma Zetu</span>
+    </div>
+    <h2 class="section-title">
+      <span data-lang="fr" class="active">Des solutions <em>écologiques</em> complètes</span>
+      <span data-lang="en">Complete <em>ecological</em> solutions</span>
+      <span data-lang="sw">Masuluhisho kamili ya <em>kimazingira</em></span>
+    </h2>
+    <p class="section-desc">
+      <span data-lang="fr" class="active">De la collecte des déchets à la formation communautaire, nous offrons une gamme complète de services pour un avenir plus vert.</span>
+      <span data-lang="en">From waste collection to community training, we offer a complete range of services for a greener future.</span>
+      <span data-lang="sw">Kutoka kukusanya taka hadi mafunzo ya jamii, tunatoa huduma kamili kwa mustakabali wa kijani zaidi.</span>
+    </p>
+  </div>
+  <div class="products-grid">
+    <div class="product-card reveal">
+      <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1617358258584-92c50ac57cd4?w=600&q=80')">
+        <div class="product-img-overlay"></div>
+        <div class="product-tag">
+          <span data-lang="fr" class="active">Bestseller</span>
+          <span data-lang="en">Bestseller</span>
+          <span data-lang="sw">Maarufu</span>
+        </div>
+      </div>
+      <div class="product-body">
+        <div class="product-icon"><i class="fas fa-fire-alt"></i></div>
+        <h3 class="product-title">
+          <span data-lang="fr" class="active">Briquettes Écologiques</span>
+          <span data-lang="en">Eco Briquettes</span>
+          <span data-lang="sw">Briquettes za Kimazingira</span>
+        </h3>
+        <p class="product-desc">
+          <span data-lang="fr" class="active">Fabriquées à partir de déchets organiques et agricoles, nos briquettes remplacent le charbon de bois traditionnel tout en préservant les forêts.</span>
+          <span data-lang="en">Made from organic and agricultural waste, our briquettes replace traditional charcoal while preserving forests.</span>
+          <span data-lang="sw">Zimetengenezwa kutoka taka za kikaboni na kilimo, briquettes zetu zinachukua nafasi ya mkaa wa miti huku zikihifadhi misitu.</span>
+        </p>
+        <ul class="product-features">
+          <li><i class="fas fa-check-circle"></i> <span data-lang="fr" class="active">Longue durée de combustion</span><span data-lang="en">Long burning time</span><span data-lang="sw">Muda mrefu wa kuwaka</span></li>
+          <li><i class="fas fa-check-circle"></i> <span data-lang="fr" class="active">Moins de fumée – meilleure santé</span><span data-lang="en">Less smoke – better health</span><span data-lang="sw">Moshi kidogo – afya bora</span></li>
+          <li><i class="fas fa-check-circle"></i> <span data-lang="fr" class="active">Abordable et économique</span><span data-lang="en">Affordable and economical</span><span data-lang="sw">Ya bei nafuu na ya kiuchumi</span></li>
+          <li><i class="fas fa-check-circle"></i> <span data-lang="fr" class="active">100% respectueuse de l'environnement</span><span data-lang="en">100% eco-friendly</span><span data-lang="sw">100% rafiki wa mazingira</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="product-card reveal">
+      <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1503596476-1c12a8ba09a9?w=600&q=80')">
+        <div class="product-img-overlay"></div>
+        <div class="product-tag">
+          <span data-lang="fr" class="active">Service</span>
+          <span data-lang="en">Service</span>
+          <span data-lang="sw">Huduma</span>
+        </div>
+      </div>
+      <div class="product-body">
+        <div class="product-icon"><i class="fas fa-truck"></i></div>
+        <h3 class="product-title">
+          <span data-lang="fr" class="active">Collecte des Déchets</span>
+          <span data-lang="en">Waste Collection</span>
+          <span data-lang="sw">Ukusanyaji wa Taka</span>
+        </h3>
+        <p class="product-desc">
+          <span data-lang="fr" class="active">Service de collecte des déchets organiques dans les quartiers, marchés et entreprises de Bukavu pour alimenter notre production.</span>
+          <span data-lang="en">Organic waste collection service from neighborhoods, markets, and businesses in Bukavu to feed our production.</span>
+          <span data-lang="sw">Huduma ya ukusanyaji wa taka za kikaboni kutoka mitaa, masoko na biashara Bukavu kulisha uzalishaji wetu.</span>
+        </p>
+        <ul class="product-features">
+          <li><i class="fas fa-check-circle"></i> <span data-lang="fr" class="active">Collecte à domicile et commerciale</span><span data-lang="en">Residential and commercial pickup</span><span data-lang="sw">Kuchukua nyumbani na biashara</span></li>
+          <li><i class="fas fa-check-circle"></i> <span data-lang="fr" class="active">Réduction des décharges sauvages</span><span data-lang="en">Reduces illegal dumping</span><span data-lang="sw">Kupunguza kutupa taka vibaya</span></li>
+          <li><i class="fas fa-check-circle"></i> <span data-lang="fr" class="active">Calendrier régulier</span><span data-lang="en">Regular schedule</span><span data-lang="sw">Ratiba ya kawaida</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="product-card reveal">
+      <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600&q=80')">
+        <div class="product-img-overlay"></div>
+        <div class="product-tag">
+          <span data-lang="fr" class="active">Formation</span>
+          <span data-lang="en">Training</span>
+          <span data-lang="sw">Mafunzo</span>
+        </div>
+      </div>
+      <div class="product-body">
+        <div class="product-icon"><i class="fas fa-graduation-cap"></i></div>
+        <h3 class="product-title">
+          <span data-lang="fr" class="active">Programmes de Formation</span>
+          <span data-lang="en">Training Programs</span>
+          <span data-lang="sw">Programu za Mafunzo</span>
+        </h3>
+        <p class="product-desc">
+          <span data-lang="fr" class="active">Formations en recyclage, production de briquettes et sensibilisation écologique pour les communautés, ONG et entreprises.</span>
+          <span data-lang="en">Training in recycling, briquette production, and environmental awareness for communities, NGOs, and businesses.</span>
+          <span data-lang="sw">Mafunzo ya usindikaji, uzalishaji wa briquettes na uhamasishaji wa mazingira kwa jamii, NGOs na biashara.</span>
+        </p>
+        <ul class="product-features">
+          <li><i class="fas fa-check-circle"></i> <span data-lang="fr" class="active">Ateliers pratiques</span><span data-lang="en">Hands-on workshops</span><span data-lang="sw">Warsha za vitendo</span></li>
+          <li><i class="fas fa-check-circle"></i> <span data-lang="fr" class="active">Certification délivrée</span><span data-lang="en">Certificate provided</span><span data-lang="sw">Cheti kinapatikana</span></li>
+          <li><i class="fas fa-check-circle"></i> <span data-lang="fr" class="active">Sensibilisation communautaire</span><span data-lang="en">Community awareness</span><span data-lang="sw">Uhamasishaji wa jamii</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top: 48px;">
+    <a href="https://wa.me/243000000000?text=Bonjour%2C%20je%20voudrais%20commander" target="_blank" class="btn btn-primary" style="font-size:1rem; padding: 16px 32px;">
+      <i class="fab fa-whatsapp"></i>
+      <span data-lang="fr" class="active">Commander via WhatsApp</span>
+      <span data-lang="en">Order via WhatsApp</span>
+      <span data-lang="sw">Agiza kupitia WhatsApp</span>
+    </a>
+  </div>
+</section>
+
+<!-- ===== WHY CHOOSE US ===== -->
+<section id="why-us">
+  <div class="section-header center">
+    <div class="section-label">
+      <span data-lang="fr" class="active">Pourquoi Nous Choisir</span>
+      <span data-lang="en">Why Choose Us</span>
+      <span data-lang="sw">Kwa Nini Kuchagua Sisi</span>
+    </div>
+    <h2 class="section-title">
+      <span data-lang="fr" class="active">Ce qui rend <em>Briquette du Kivu</em> unique</span>
+      <span data-lang="en">What makes <em>Briquette du Kivu</em> unique</span>
+      <span data-lang="sw">Kinachofanya <em>Briquette du Kivu</em> kuwa ya kipekee</span>
+    </h2>
+  </div>
+  <div class="why-grid">
+    <div class="why-card reveal">
+      <div class="why-icon"><i class="fas fa-leaf"></i></div>
+      <div class="why-content">
+        <h3 data-lang="fr" class="active">Solution Écologique</h3>
+        <h3 data-lang="en">Eco-friendly Solution</h3>
+        <h3 data-lang="sw">Suluhisho la Kimazingira</h3>
+        <p data-lang="fr" class="active">Chaque briquette remplace du charbon de bois traditionnel, réduisant directement la pression sur les forêts du Kivu et les émissions de CO₂.</p>
+        <p data-lang="en">Each briquette replaces traditional charcoal, directly reducing pressure on Kivu's forests and CO₂ emissions.</p>
+        <p data-lang="sw">Kila briquette inachukua nafasi ya mkaa wa kawaida, ikipunguza moja kwa moja shinikizo kwenye misitu ya Kivu na uzalishaji wa CO₂.</p>
+      </div>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-icon"><i class="fas fa-coins"></i></div>
+      <div class="why-content">
+        <h3 data-lang="fr" class="active">Économiquement Accessible</h3>
+        <h3 data-lang="en">Cost-Effective</h3>
+        <h3 data-lang="sw">Ya Bei Nafuu</h3>
+        <p data-lang="fr" class="active">Nos briquettes brûlent plus longtemps et produisent plus de chaleur que le charbon traditionnel, ce qui les rend plus économiques pour les familles.</p>
+        <p data-lang="en">Our briquettes burn longer and produce more heat than traditional charcoal, making them more economical for families.</p>
+        <p data-lang="sw">Briquettes zetu zinawaka muda mrefu zaidi na kutoa joto zaidi kuliko mkaa wa kawaida, na hivyo kuwa za kiuchumi zaidi kwa familia.</p>
+      </div>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-icon"><i class="fas fa-hands-helping"></i></div>
+      <div class="why-content">
+        <h3 data-lang="fr" class="active">Porté par la Communauté</h3>
+        <h3 data-lang="en">Community-Driven</h3>
+        <h3 data-lang="sw">Inayoongozwa na Jamii</h3>
+        <p data-lang="fr" class="active">Nous employons des membres locaux, collectons les déchets dans les quartiers et investissons dans la formation de la jeunesse de Bukavu.</p>
+        <p data-lang="en">We employ local members, collect waste from neighborhoods, and invest in training Bukavu's youth.</p>
+        <p data-lang="sw">Tunaajiri wanajamii wa ndani, kukusanya taka kutoka mitaa, na kuwekeza katika mafunzo ya vijana wa Bukavu.</p>
+      </div>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-icon"><i class="fas fa-seedling"></i></div>
+      <div class="why-content">
+        <h3 data-lang="fr" class="active">Avenir Durable</h3>
+        <h3 data-lang="en">Sustainable Future</h3>
+        <h3 data-lang="sw">Mustakabali Endelevu</h3>
+        <p data-lang="fr" class="active">Notre modèle économique circulaire garantit un impact positif à long terme sur l'environnement, les communautés et l'économie locale.</p>
+        <p data-lang="en">Our circular business model guarantees a long-term positive impact on the environment, communities, and the local economy.</p>
+        <p data-lang="sw">Mfumo wetu wa biashara wa mzunguko unahakikisha athari nzuri za muda mrefu kwa mazingira, jamii, na uchumi wa ndani.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT PAGE ===== -->
+<section id="about">
+  <div class="section-header center">
+    <div class="section-label">
+      <span data-lang="fr" class="active">À Propos de Nous</span>
+      <span data-lang="en">About Us</span>
+      <span data-lang="sw">Kuhusu Sisi</span>
+    </div>
+    <h2 class="section-title">
+      <span data-lang="fr" class="active">L'histoire de <em>Briquette du Kivu</em></span>
+      <span data-lang="en">The story of <em>Briquette du Kivu</em></span>
+      <span data-lang="sw">Historia ya <em>Briquette du Kivu</em></span>
+    </h2>
+  </div>
+  <div class="mvv-grid">
+    <div class="mvv-card reveal">
+      <h3>
+        <span data-lang="fr" class="active">🎯 Notre Mission</span>
+        <span data-lang="en">🎯 Our Mission</span>
+        <span data-lang="sw">🎯 Dhamira Yetu</span>
+      </h3>
+      <p data-lang="fr" class="active">Réduire la déforestation et la pollution en transformant les déchets organiques en briquettes énergétiques abordables, accessibles à toutes les familles du Kivu et au-delà.</p>
+      <p data-lang="en">Reduce deforestation and pollution by transforming organic waste into affordable energy briquettes, accessible to all families in Kivu and beyond.</p>
+      <p data-lang="sw">Kupunguza ukataji miti na uchafuzi kwa kubadilisha taka za kikaboni kuwa briquettes za nishati zinazoweza kumudu, zinazopatikana kwa familia zote za Kivu na zaidi.</p>
+    </div>
+    <div class="mvv-card reveal">
+      <h3>
+        <span data-lang="fr" class="active">🌍 Notre Vision</span>
+        <span data-lang="en">🌍 Our Vision</span>
+        <span data-lang="sw">🌍 Maono Yetu</span>
+      </h3>
+      <p data-lang="fr" class="active">Devenir le leader des solutions énergétiques durables en Afrique centrale, contribuant à une Afrique verte, prospère et autosuffisante pour les générations futures.</p>
+      <p data-lang="en">Become the leader in sustainable energy solutions in Central Africa, contributing to a green, prosperous, and self-sufficient Africa for future generations.</p>
+      <p data-lang="sw">Kuwa kiongozi wa masuluhisho ya nishati endelevu Afrika ya Kati, kuchangia Afrika ya kijani, yenye ustawi na kujitegemea kwa vizazi vijavyo.</p>
+    </div>
+    <div class="mvv-card reveal">
+      <h3>
+        <span data-lang="fr" class="active">💡 Nos Valeurs</span>
+        <span data-lang="en">💡 Our Values</span>
+        <span data-lang="sw">💡 Maadili Yetu</span>
+      </h3>
+      <p data-lang="fr" class="active">Innovation, Communauté, Durabilité, Transparence, Impact. Ces valeurs guident chaque décision que nous prenons, de la collecte des déchets à la livraison finale.</p>
+      <p data-lang="en">Innovation, Community, Sustainability, Transparency, Impact. These values guide every decision we make, from waste collection to final delivery.</p>
+      <p data-lang="sw">Ubunifu, Jamii, Uendelevu, Uwazi, Athari. Maadili haya yanaongoza kila uamuzi tunaoufanya, kutoka ukusanyaji wa taka hadi utoaji wa mwisho.</p>
+    </div>
+  </div>
+  <div class="about-full-grid">
+    <div class="about-content reveal">
+      <div class="section-label">
+        <span data-lang="fr" class="active">Le Fondateur</span>
+        <span data-lang="en">The Founder</span>
+        <span data-lang="sw">Mwanzilishi</span>
+      </div>
+      <h2 class="section-title">
+        <span data-lang="fr" class="active">Guido Murhula <em>Zigabe</em></span>
+        <span data-lang="en">Guido Murhula <em>Zigabe</em></span>
+        <span data-lang="sw">Guido Murhula <em>Zigabe</em></span>
+      </h2>
+      <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 16px; font-weight:300;" data-lang="fr" class="active">
+        Entrepreneur social et défenseur de l'environnement, Guido Murhula Zigabe a fondé Briquette du Kivu avec une conviction simple mais puissante : les communautés locales ont toutes les ressources nécessaires pour résoudre leurs propres problèmes.
+      </p>
+      <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 16px; font-weight:300;" data-lang="en" class="">
+        Social entrepreneur and environmental advocate, Guido Murhula Zigabe founded Briquette du Kivu with a simple but powerful conviction: local communities have all the resources needed to solve their own problems.
+      </p>
+      <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 16px; font-weight:300;" data-lang="sw" class="">
+        Mjasiriamali wa kijamii na mtetezi wa mazingira, Guido Murhula Zigabe alianzisha Briquette du Kivu na imani rahisi lakini yenye nguvu: jamii za ndani zina rasilimali zote zinazohitajika kutatua matatizo yao wenyewe.
+      </p>
+      <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 28px; font-weight:300;" data-lang="fr" class="active">
+        Face à la déforestation galopante au Kivu et à la pollution liée aux modes de cuisson traditionnels, il a transformé un problème local en une opportunité de développement durable, créant emplois, savoir-faire et impact environnemental positif.
+      </p>
+      <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 28px; font-weight:300;" data-lang="en" class="">
+        Faced with rampant deforestation in Kivu and pollution from traditional cooking methods, he transformed a local problem into a sustainable development opportunity, creating jobs, know-how, and positive environmental impact.
+      </p>
+      <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 28px; font-weight:300;" data-lang="sw" class="">
+        Mbele ya ukataji miti unaokua kwa kasi Kivu na uchafuzi kutoka njia za kupika za jadi, alibadilisha tatizo la ndani kuwa fursa ya maendeleo endelevu, kuunda kazi, ujuzi, na athari nzuri za kimazingira.
+      </p>
+    </div>
+    <div class="about-image reveal">
+      <img class="about-img-main" src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80" alt="Environmental work" style="height:400px;" />
+    </div>
+  </div>
+  <div class="section-header center">
+    <h2 class="section-title">
+      <span data-lang="fr" class="active">Nos <em>Valeurs</em></span>
+      <span data-lang="en">Our <em>Values</em></span>
+      <span data-lang="sw">Maadili <em>Yetu</em></span>
+    </h2>
+  </div>
+  <div class="values-grid">
+    <div class="value-card reveal">
+      <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+      <h3 class="value-title" data-lang="fr" class="active">Innovation</h3>
+      <h3 class="value-title" data-lang="en">Innovation</h3>
+      <h3 class="value-title" data-lang="sw">Ubunifu</h3>
+      <p class="value-desc" data-lang="fr" class="active">Nous cherchons constamment de nouvelles façons de transformer les défis environnementaux en solutions durables.</p>
+      <p class="value-desc" data-lang="en">We constantly seek new ways to transform environmental challenges into sustainable solutions.</p>
+      <p class="value-desc" data-lang="sw">Tunatafuta kila wakati njia mpya za kubadilisha changamoto za mazingira kuwa masuluhisho endelevu.</p>
+    </div>
+    <div class="value-card reveal">
+      <div class="value-icon"><i class="fas fa-users"></i></div>
+      <h3 class="value-title" data-lang="fr" class="active">Communauté</h3>
+      <h3 class="value-title" data-lang="en">Community</h3>
+      <h3 class="value-title" data-lang="sw">Jamii</h3>
+      <p class="value-desc" data-lang="fr" class="active">La force de notre initiative repose sur les personnes locales. Ensemble, nous construisons un avenir meilleur pour Bukavu.</p>
+      <p class="value-desc" data-lang="en">The strength of our initiative rests on local people. Together, we build a better future for Bukavu.</p>
+      <p class="value-desc" data-lang="sw">Nguvu ya mpango wetu inategemea watu wa ndani. Pamoja, tunajenga mustakabali bora kwa Bukavu.</p>
+    </div>
+    <div class="value-card reveal">
+      <div class="value-icon"><i class="fas fa-globe-africa"></i></div>
+      <h3 class="value-title" data-lang="fr" class="active">Durabilité</h3>
+      <h3 class="value-title" data-lang="en">Sustainability</h3>
+      <h3 class="value-title" data-lang="sw">Uendelevu</h3>
+      <p class="value-desc" data-lang="fr" class="active">Chaque action que nous prenons est guidée par la responsabilité envers les générations futures et la planète.</p>
+      <p class="value-desc" data-lang="en">Every action we take is guided by responsibility to future generations and the planet.</p>
+      <p class="value-desc" data-lang="sw">Kila hatua tunayochukua inaongozwa na uwajibikaji kwa vizazi vijavyo na sayari.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== IMPACT PAGE ===== -->
+<section id="impact">
+  <div class="section-header center">
+    <div class="section-label" style="justify-content:center; color: var(--green-light);">
+      <span data-lang="fr" class="active">Notre Impact Environnemental</span>
+      <span data-lang="en">Our Environmental Impact</span>
+      <span data-lang="sw">Athari Yetu ya Kimazingira</span>
+    </div>
+    <h2 class="section-title">
+      <span data-lang="fr" class="active">Construire un <em>avenir plus vert</em></span>
+      <span data-lang="en">Building a <em>greener future</em></span>
+      <span data-lang="sw">Kujenga <em>mustakabali wa kijani zaidi</em></span>
+    </h2>
+    <p class="section-desc" style="margin: 0 auto;">
+      <span data-lang="fr" class="active">À travers chaque briquette produite, nous contribuons à la protection des forêts, à la réduction de la pollution et au développement des communautés locales.</span>
+      <span data-lang="en">Through each briquette produced, we contribute to forest protection, pollution reduction, and local community development.</span>
+      <span data-lang="sw">Kupitia kila briquette inayozalishwa, tunachangia ulinzi wa misitu, kupunguza uchafuzi, na maendeleo ya jamii za ndani.</span>
+    </p>
+  </div>
+  <div class="impact-big-grid">
+    <div class="impact-feature-card reveal">
+      <div class="impact-feature-icon"><i class="fas fa-tree"></i></div>
+      <h3 data-lang="fr" class="active">Lutte contre la Déforestation</h3>
+      <h3 data-lang="en">Fighting Deforestation</h3>
+      <h3 data-lang="sw">Kupambana na Ukataji Miti</h3>
+      <p data-lang="fr" class="active">En substituant le charbon de bois, nos briquettes ont directement contribué à épargner plus de 5 000 arbres depuis notre création. Chaque sac vendu = 3 arbres sauvés.</p>
+      <p data-lang="en">By substituting charcoal, our briquettes have directly contributed to sparing more than 5,000 trees since our creation. Every bag sold = 3 trees saved.</p>
+      <p data-lang="sw">Kwa kuchukua nafasi ya mkaa wa miti, briquettes zetu zimechangia moja kwa moja kuokoa miti zaidi ya 5,000 tangu tulipoanzishwa. Kila mfuko unaouzwa = miti 3 iliyookolewa.</p>
+    </div>
+    <div class="impact-feature-card reveal">
+      <div class="impact-feature-icon"><i class="fas fa-wind"></i></div>
+      <h3 data-lang="fr" class="active">Réduction des Émissions CO₂</h3>
+      <h3 data-lang="en">CO₂ Emissions Reduction</h3>
+      <h3 data-lang="sw">Kupunguza Uzalishaji wa CO₂</h3>
+      <p data-lang="fr" class="active">Nos briquettes émettent significativement moins de carbone que le bois de chauffage ou le charbon traditionnel, contribuant directement à l'atténuation du changement climatique.</p>
+      <p data-lang="en">Our briquettes emit significantly less carbon than firewood or traditional charcoal, directly contributing to climate change mitigation.</p>
+      <p data-lang="sw">Briquettes zetu hutoa kaboni kidogo sana kuliko kuni au mkaa wa kawaida, na kuchangia moja kwa moja kupunguza mabadiliko ya tabianchi.</p>
+    </div>
+    <div class="impact-feature-card reveal">
+      <div class="impact-feature-icon"><i class="fas fa-recycle"></i></div>
+      <h3 data-lang="fr" class="active">Économie Circulaire</h3>
+      <h3 data-lang="en">Circular Economy</h3>
+      <h3 data-lang="sw">Uchumi wa Mzunguko</h3>
+      <p data-lang="fr" class="active">En transformant des déchets qui pollueraient l'environnement en produit utile, nous créons une boucle vertueuse : moins de décharges sauvages, moins de pollution, plus d'énergie.</p>
+      <p data-lang="en">By transforming waste that would pollute the environment into a useful product, we create a virtuous loop: fewer illegal dumps, less pollution, more energy.</p>
+      <p data-lang="sw">Kwa kubadilisha taka ambazo zingedhuru mazingira kuwa bidhaa inayofaa, tunaunda mzunguko wenye tija: madampo machache haramu, uchafuzi mdogo, nishati zaidi.</p>
+    </div>
+    <div class="impact-feature-card reveal">
+      <div class="impact-feature-icon"><i class="fas fa-heart"></i></div>
+      <h3 data-lang="fr" class="active">Santé Communautaire</h3>
+      <h3 data-lang="en">Community Health</h3>
+      <h3 data-lang="sw">Afya ya Jamii</h3>
+      <p data-lang="fr" class="active">Moins de fumée signifie moins de maladies respiratoires, particulièrement pour les femmes et les enfants qui cuisinent quotidiennement. Un impact sanitaire direct et mesurable.</p>
+      <p data-lang="en">Less smoke means fewer respiratory illnesses, particularly for women and children who cook daily. A direct and measurable health impact.</p>
+      <p data-lang="sw">Moshi kidogo maana yake magonjwa machache ya kupumua, hasa kwa wanawake na watoto wanaopika kila siku. Athari ya afya ya moja kwa moja na inayopimika.</p>
+    </div>
+  </div>
+  <div class="section-header center">
+    <h2 class="section-title" style="color:#fff;">
+      <span data-lang="fr" class="active">Avant / <em>Après</em></span>
+      <span data-lang="en">Before / <em>After</em></span>
+      <span data-lang="sw">Kabla / <em>Baada</em></span>
+    </h2>
+  </div>
+  <div class="before-after">
+    <div class="ba-card reveal">
+      <img class="ba-img" src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=700&q=80" alt="Avant" />
+      <div class="ba-label ba-before">
+        <span data-lang="fr" class="active">Avant</span>
+        <span data-lang="en">Before</span>
+        <span data-lang="sw">Kabla</span>
+      </div>
+      <div class="ba-caption">
+        <span data-lang="fr" class="active">Déforestation et utilisation de bois de chauffage traditionnel</span>
+        <span data-lang="en">Deforestation and use of traditional firewood</span>
+        <span data-lang="sw">Ukataji miti na matumizi ya kuni za kawaida</span>
+      </div>
+    </div>
+    <div class="ba-card reveal">
+      <img class="ba-img" src="https://images.unsplash.com/photo-1569024613975-62568dafd6f2?w=700&q=80" alt="Après" />
+      <div class="ba-label ba-after">
+        <span data-lang="fr" class="active">Après</span>
+        <span data-lang="en">After</span>
+        <span data-lang="sw">Baada</span>
+      </div>
+      <div class="ba-caption">
+        <span data-lang="fr" class="active">Briquettes écologiques, forêts préservées, communautés prospères</span>
+        <span data-lang="en">Eco briquettes, preserved forests, thriving communities</span>
+        <span data-lang="sw">Briquettes za kimazingira, misitu iliyohifadhiwa, jamii zinazostawi</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section id="testimonials">
+  <div class="section-header center">
+    <div class="section-label">
+      <span data-lang="fr" class="active">Témoignages</span>
+      <span data-lang="en">Testimonials</span>
+      <span data-lang="sw">Ushuhuda</span>
+    </div>
+    <h2 class="section-title">
+      <span data-lang="fr" class="active">Ce que disent nos <em>clients & partenaires</em></span>
+      <span data-lang="en">What our <em>clients & partners</em> say</span>
+      <span data-lang="sw">Wanachosema <em>wateja na washirika</em> wetu</span>
+    </h2>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal">
+      <div class="testimonial-quote">"</div>
+      <p class="testimonial-text" data-lang="fr" class="active">Les briquettes de Briquette du Kivu ont complètement changé notre façon de cuisiner. Elles durent plus longtemps, font moins de fumée et coûtent moins cher. Je recommande vivement à toutes les familles.</p>
+      <p class="testimonial-text" data-lang="en">Briquette du Kivu's briquettes have completely changed the way we cook. They last longer, produce less smoke, and cost less. I highly recommend them to all families.</p>
+      <p class="testimonial-text" data-lang="sw">Briquettes za Briquette du Kivu zimebadilisha kabisa jinsi tunavyopika. Zinawaka muda mrefu zaidi, hutoa moshi kidogo, na zinagharimu kidogo. Napendekeza sana kwa familia zote.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">M</div>
+        <div>
+          <div class="stars">★★★★★</div>
+          <div class="author-name">Marie Nabintu</div>
+          <div class="author-role" data-lang="fr" class="active">Cliente, Quartier Kadutu, Bukavu</div>
+          <div class="author-role" data-lang="en">Customer, Kadutu Neighborhood, Bukavu</div>
+          <div class="author-role" data-lang="sw">Mteja, Mtaa wa Kadutu, Bukavu</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal">
+      <div class="testimonial-quote">"</div>
+      <p class="testimonial-text" data-lang="fr" class="active">En tant qu'ONG travaillant sur la protection de l'environnement au Kivu, nous sommes fiers de soutenir Briquette du Kivu. Leur approche est innovante, impactante et véritablement centrée sur la communauté.</p>
+      <p class="testimonial-text" data-lang="en">As an NGO working on environmental protection in Kivu, we are proud to support Briquette du Kivu. Their approach is innovative, impactful, and truly community-centered.</p>
+      <p class="testimonial-text" data-lang="sw">Kama NGO inayofanya kazi ya ulinzi wa mazingira Kivu, tunajivunia kuunga mkono Briquette du Kivu. Mbinu yao ni ya ubunifu, yenye athari, na ya kweli inayolenga jamii.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">J</div>
+        <div>
+          <div class="stars">★★★★★</div>
+          <div class="author-name">Jean-Paul Bisimwa</div>
+          <div class="author-role" data-lang="fr" class="active">Coordinateur ONG Environnement Kivu</div>
+          <div class="author-role" data-lang="en">NGO Coordinator, Environment Kivu</div>
+          <div class="author-role" data-lang="sw">Mratibu wa NGO, Mazingira Kivu</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal">
+      <div class="testimonial-quote">"</div>
+      <p class="testimonial-text" data-lang="fr" class="active">Nous utilisons les briquettes de Briquette du Kivu dans notre restaurant depuis 6 mois. La qualité est constante, la livraison est ponctuelle et l'impact sur notre facture énergétique est significatif.</p>
+      <p class="testimonial-text" data-lang="en">We have been using Briquette du Kivu's briquettes in our restaurant for 6 months. The quality is consistent, delivery is on time, and the impact on our energy bill is significant.</p>
+      <p class="testimonial-text" data-lang="sw">Tumekuwa tukitumia briquettes za Briquette du Kivu katika mkahawa wetu kwa miezi 6. Ubora ni thabiti, utoaji ni kwa wakati, na athari kwenye bili yetu ya nishati ni kubwa.</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">A</div>
+        <div>
+          <div class="stars">★★★★★</div>
+          <div class="author-name">Amina Zawadi</div>
+          <div class="author-role" data-lang="fr" class="active">Propriétaire de restaurant, Bukavu</div>
+          <div class="author-role" data-lang="en">Restaurant Owner, Bukavu</div>
+          <div class="author-role" data-lang="sw">Mmiliki wa Mkahawa, Bukavu</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section id="gallery">
+  <div class="section-header center">
+    <div class="section-label">
+      <span data-lang="fr" class="active">Galerie</span>
+      <span data-lang="en">Gallery</span>
+      <span data-lang="sw">Matunzio</span>
+    </div>
+    <h2 class="section-title">
+      <span data-lang="fr" class="active">Notre travail en <em>images</em></span>
+      <span data-lang="en">Our work in <em>pictures</em></span>
+      <span data-lang="sw">Kazi yetu kwa <em>picha</em></span>
+    </h2>
+    <p class="section-desc">
+      <span data-lang="fr" class="active">Du processus de production aux actions communautaires, découvrez Briquette du Kivu en action.</span>
+      <span data-lang="en">From the production process to community actions, discover Briquette du Kivu in action.</span>
+      <span data-lang="sw">Kutoka mchakato wa uzalishaji hadi shughuli za jamii, gundua Briquette du Kivu ikifanya kazi.</span>
+    </p>
+  </div>
+  <div class="gallery-grid" id="galleryGrid">
+    <div class="gallery-item wide" onclick="openLightbox(0)">
+      <img src="https://images.unsplash.com/photo-1569024613975-62568dafd6f2?w=800&q=80" alt="Production" loading="lazy" />
+      <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(1)">
+      <img src="https://images.unsplash.com/photo-1617358258584-92c50ac57cd4?w=600&q=80" alt="Briquettes" loading="lazy" />
+      <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(2)">
+      <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600&q=80" alt="Community" loading="lazy" />
+      <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(3)">
+      <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80" alt="Training" loading="lazy" />
+      <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+    </div>
+    <div class="gallery-item wide" onclick="openLightbox(4)">
+      <img src="https://images.unsplash.com/photo-1503596476-1c12a8ba09a9?w=800&q=80" alt="Team" loading="lazy" />
+      <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(5)">
+      <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&q=80" alt="Nature" loading="lazy" />
+      <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+  <button class="lightbox-nav lightbox-prev" onclick="prevImage()"><i class="fas fa-chevron-left"></i></button>
+  <img id="lightboxImg" src="" alt="" />
+  <button class="lightbox-nav lightbox-next" onclick="nextImage()"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+<!-- ===== PARTNERS ===== -->
+<section id="partners">
+  <div class="section-header center">
+    <div class="section-label">
+      <span data-lang="fr" class="active">Partenaires & ONG</span>
+      <span data-lang="en">Partners & NGOs</span>
+      <span data-lang="sw">Washirika na NGOs</span>
+    </div>
+    <h2 class="section-title">
+      <span data-lang="fr" class="active">Ensemble vers un avenir <em>plus vert</em></span>
+      <span data-lang="en">Together towards a <em>greener</em> future</span>
+      <span data-lang="sw">Pamoja kuelekea mustakabali <em>wa kijani zaidi</em></span>
+    </h2>
+  </div>
+  <div class="partners-logos">
+    <div class="partner-logo reveal">🌍 ONG Kivu Vert</div>
+    <div class="partner-logo reveal">♻️ Congo Recycle</div>
+    <div class="partner-logo reveal">🌱 GreenAfrica Fund</div>
+    <div class="partner-logo reveal">💧 PNUD / UNDP</div>
+    <div class="partner-logo reveal">🤝 Bukavu Together</div>
+    <div class="partner-logo reveal">⚡ Énergie Propre RDC</div>
+    <div class="partner-logo reveal">🏭 Kivu Industries</div>
+    <div class="partner-logo reveal">🌳 ForestWatch DRC</div>
+  </div>
+  <div class="become-partner reveal">
+    <h3 data-lang="fr" class="active">Devenez Partenaire</h3>
+    <h3 data-lang="en">Become a Partner</h3>
+    <h3 data-lang="sw">Kuwa Mshirika</h3>
+    <p data-lang="fr" class="active">Vous êtes une ONG, une entreprise, un investisseur ou une organisation internationale ? Rejoignez notre réseau et contribuez à l'impact environnemental et social en RDC.</p>
+    <p data-lang="en">Are you an NGO, company, investor, or international organization? Join our network and contribute to environmental and social impact in the DRC.</p>
+    <p data-lang="sw">Je wewe ni NGO, kampuni, mwekezaji, au shirika la kimataifa? Jiunge na mtandao wetu na uchangie athari za kimazingira na kijamii DRC.</p>
+    <a href="#contact" class="btn btn-primary">
+      <i class="fas fa-handshake"></i>
+      <span data-lang="fr" class="active">Nous contacter</span>
+      <span data-lang="en">Contact Us</span>
+      <span data-lang="sw">Wasiliana Nasi</span>
+    </a>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="section-header">
+    <div class="section-label">
+      <span data-lang="fr" class="active">Contactez-Nous</span>
+      <span data-lang="en">Contact Us</span>
+      <span data-lang="sw">Wasiliana Nasi</span>
+    </div>
+    <h2 class="section-title">
+      <span data-lang="fr" class="active">Travaillons <em>ensemble</em></span>
+      <span data-lang="en">Let's work <em>together</em></span>
+      <span data-lang="sw">Tufanye kazi <em>pamoja</em></span>
+    </h2>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <p class="section-desc">
+        <span data-lang="fr" class="active">Que vous souhaitiez commander des briquettes, devenir partenaire ou simplement en savoir plus, n'hésitez pas à nous contacter.</span>
+        <span data-lang="en">Whether you want to order briquettes, become a partner, or simply learn more, don't hesitate to contact us.</span>
+        <span data-lang="sw">Iwe unataka kuagiza briquettes, kuwa mshirika, au kujifunza zaidi tu, usisite kuwasiliana nasi.</span>
+      </p>
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div>
+          <strong data-lang="fr" class="active">Adresse</strong>
+          <strong data-lang="en">Address</strong>
+          <strong data-lang="sw">Anwani</strong>
+          <span>Bukavu, Sud-Kivu, RD Congo</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+        <div>
+          <strong>WhatsApp</strong>
+          <span>+243 (0) 000 000 000</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+        <div>
+          <strong>Email</strong>
+          <span>contact@briquetteduKivu.cd</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+        <div>
+          <strong data-lang="fr" class="active">Heures d'ouverture</strong>
+          <strong data-lang="en">Opening Hours</strong>
+          <strong data-lang="sw">Masaa ya Kufungua</strong>
+          <span data-lang="fr" class="active">Lun–Sam: 8h00–18h00</span>
+          <span data-lang="en">Mon–Sat: 8:00–18:00</span>
+          <span data-lang="sw">Jtu–Jmo: 8:00–18:00</span>
+        </div>
+      </div>
+      <a href="https://wa.me/243000000000" target="_blank" class="btn btn-primary" style="margin-top: 16px; background:#25d366;">
+        <i class="fab fa-whatsapp"></i>
+        <span data-lang="fr" class="active">Écrire sur WhatsApp</span>
+        <span data-lang="en">Message on WhatsApp</span>
+        <span data-lang="sw">Andika kwenye WhatsApp</span>
+      </a>
+    </div>
+    <div class="contact-form reveal">
+      <div class="form-row">
+        <div class="form-group">
+          <label>
+            <span data-lang="fr" class="active">Prénom</span>
+            <span data-lang="en">First Name</span>
+            <span data-lang="sw">Jina la Kwanza</span>
+          </label>
+          <input type="text" placeholder="Guido" />
+        </div>
+        <div class="form-group">
+          <label>
+            <span data-lang="fr" class="active">Nom</span>
+            <span data-lang="en">Last Name</span>
+            <span data-lang="sw">Jina la Familia</span>
+          </label>
+          <input type="text" placeholder="Murhula" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="votre@email.com" />
+      </div>
+      <div class="form-group">
+        <label>
+          <span data-lang="fr" class="active">Objet</span>
+          <span data-lang="en">Subject</span>
+          <span data-lang="sw">Mada</span>
+        </label>
+        <select>
+          <option data-lang="fr" class="active">Commande de briquettes</option>
+          <option data-lang="en">Briquette Order</option>
+          <option data-lang="sw">Agizo la Briquettes</option>
+          <option data-lang="fr">Partenariat / ONG</option>
+          <option data-lang="en">Partnership / NGO</option>
+          <option data-lang="sw">Ushirikiano / NGO</option>
+          <option data-lang="fr">Formation</option>
+          <option data-lang="en">Training</option>
+          <option data-lang="sw">Mafunzo</option>
+          <option data-lang="fr">Autre</option>
+          <option data-lang="en">Other</option>
+          <option data-lang="sw">Nyingine</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>
+          <span data-lang="fr" class="active">Message</span>
+          <span data-lang="en">Message</span>
+          <span data-lang="sw">Ujumbe</span>
+        </label>
+        <textarea placeholder="Votre message..."></textarea>
+      </div>
+      <button type="button" class="btn btn-primary" style="width:100%; justify-content:center;" onclick="handleFormSubmit(this)">
+        <i class="fas fa-paper-plane"></i>
+        <span data-lang="fr" class="active">Envoyer le Message</span>
+        <span data-lang="en">Send Message</span>
+        <span data-lang="sw">Tuma Ujumbe</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BANNER ===== -->
+<section id="cta">
+  <div class="section-header center" style="margin-bottom: 0;">
+    <div class="section-label" style="justify-content:center; color: var(--green-light);">
+      <span data-lang="fr" class="active">Rejoignez le Mouvement</span>
+      <span data-lang="en">Join the Movement</span>
+      <span data-lang="sw">Jiunge na Harakati</span>
+    </div>
+    <h2 class="section-title">
+      <span data-lang="fr" class="active">Ensemble, construisons un avenir <em>plus vert</em></span>
+      <span data-lang="en">Together, let's build a <em>greener</em> future</span>
+      <span data-lang="sw">Pamoja, tujenga mustakabali <em>wa kijani zaidi</em></span>
+    </h2>
+    <p class="section-desc">
+      <span data-lang="fr" class="active">Commandez, partenariez, investissez ou formez-vous. Chaque action compte pour la planète et pour les communautés du Kivu.</span>
+      <span data-lang="en">Order, partner, invest, or train. Every action counts for the planet and the communities of Kivu.</span>
+      <span data-lang="sw">Agiza, shiriki, wekeza, au jiburudishe. Kila hatua inafaa kwa sayari na jamii za Kivu.</span>
+    </p>
+  </div>
+  <div class="cta-btns">
+    <a href="https://wa.me/243000000000" target="_blank" class="btn btn-white">
+      <i class="fab fa-whatsapp" style="color:#25d366;"></i>
+      <span data-lang="fr" class="active">Commander via WhatsApp</span>
+      <span data-lang="en">Order via WhatsApp</span>
+      <span data-lang="sw">Agiza kupitia WhatsApp</span>
+    </a>
+    <a href="#contact" class="btn btn-outline">
+      <i class="fas fa-handshake"></i>
+      <span data-lang="fr" class="active">Devenir Partenaire</span>
+      <span data-lang="en">Become a Partner</span>
+      <span data-lang="sw">Kuwa Mshirika</span>
+    </a>
+  </div>
+</section>
+
+<!-- ===== BLOG ===== -->
+<section id="blog">
+  <div class="section-header center">
+    <div class="section-label">
+      <span data-lang="fr" class="active">Articles & Actualités</span>
+      <span data-lang="en">Articles & News</span>
+      <span data-lang="sw">Makala & Habari</span>
+    </div>
+    <h2 class="section-title">
+      <span data-lang="fr" class="active">Notre <em>Blog</em></span>
+      <span data-lang="en">Our <em>Blog</em></span>
+      <span data-lang="sw">Blogu <em>Yetu</em></span>
+    </h2>
+    <p class="section-desc">
+      <span data-lang="fr" class="active">Restez informés de nos dernières actualités, innovations et impacts environnementaux à Bukavu et au-delà.</span>
+      <span data-lang="en">Stay informed about our latest news, innovations and environmental impacts in Bukavu and beyond.</span>
+      <span data-lang="sw">Pata habari za hivi karibuni, ubunifu wetu na athari za mazingira huko Bukavu na zaidi.</span>
+    </p>
+  </div>
+  <div class="blog-grid" id="blogGrid">
+    <div class="blog-card reveal">
+      <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80')">
+        <div class="blog-category"><span data-lang="fr" class="active">Innovation</span><span data-lang="en">Innovation</span><span data-lang="sw">Ubunifu</span></div>
+      </div>
+      <div class="blog-body">
+        <div class="blog-meta">
+          <span><i class="fas fa-calendar-alt"></i> <span data-lang="fr" class="active">15 Mars 2025</span><span data-lang="en">March 15, 2025</span><span data-lang="sw">15 Machi 2025</span></span>
+          <span><i class="fas fa-clock"></i> 5 min</span>
+        </div>
+        <h3 class="blog-title">
+          <span data-lang="fr" class="active">Nouvelle formule de briquettes : 30% plus efficace</span>
+          <span data-lang="en">New briquette formula: 30% more efficient</span>
+          <span data-lang="sw">Fomula mpya ya briquette: 30% bora zaidi</span>
+        </h3>
+        <p class="blog-excerpt">
+          <span data-lang="fr" class="active">Notre équipe de R&D a développé une nouvelle composition qui améliore la durée de combustion et réduit encore plus les émissions de fumée.</span>
+          <span data-lang="en">Our R&D team has developed a new composition that improves burning time and further reduces smoke emissions.</span>
+          <span data-lang="sw">Timu yetu ya utafiti imebuni muundo mpya unaoboresha muda wa kuwaka na kupunguza moshi zaidi.</span>
+        </p>
+        <a href="#blog" class="blog-read-more">
+          <span data-lang="fr" class="active">Lire la suite</span><span data-lang="en">Read more</span><span data-lang="sw">Soma zaidi</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+    <div class="blog-card reveal">
+      <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1542601906897-ecd57e5b5dbc?w=600&q=80')">
+        <div class="blog-category"><span data-lang="fr" class="active">Communauté</span><span data-lang="en">Community</span><span data-lang="sw">Jamii</span></div>
+      </div>
+      <div class="blog-body">
+        <div class="blog-meta">
+          <span><i class="fas fa-calendar-alt"></i> <span data-lang="fr" class="active">2 Février 2025</span><span data-lang="en">February 2, 2025</span><span data-lang="sw">2 Februari 2025</span></span>
+          <span><i class="fas fa-clock"></i> 4 min</span>
+        </div>
+        <h3 class="blog-title">
+          <span data-lang="fr" class="active">Formation de 50 femmes entrepreneures à Bukavu</span>
+          <span data-lang="en">Training 50 women entrepreneurs in Bukavu</span>
+          <span data-lang="sw">Mafunzo kwa wajasiriamali 50 wa kike huko Bukavu</span>
+        </h3>
+        <p class="blog-excerpt">
+          <span data-lang="fr" class="active">Dans le cadre de notre programme d'impact social, nous avons formé 50 femmes à la production et à la vente de briquettes écologiques.</span>
+          <span data-lang="en">As part of our social impact program, we trained 50 women in the production and sale of eco-friendly briquettes.</span>
+          <span data-lang="sw">Kama sehemu ya programu yetu ya athari ya kijamii, tulifunza wanawake 50 katika uzalishaji na uuzaji wa briquettes.</span>
+        </p>
+        <a href="#blog" class="blog-read-more">
+          <span data-lang="fr" class="active">Lire la suite</span><span data-lang="en">Read more</span><span data-lang="sw">Soma zaidi</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+    <div class="blog-card reveal">
+      <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=600&q=80')">
+        <div class="blog-category"><span data-lang="fr" class="active">Environnement</span><span data-lang="en">Environment</span><span data-lang="sw">Mazingira</span></div>
+      </div>
+      <div class="blog-body">
+        <div class="blog-meta">
+          <span><i class="fas fa-calendar-alt"></i> <span data-lang="fr" class="active">10 Janvier 2025</span><span data-lang="en">January 10, 2025</span><span data-lang="sw">10 Januari 2025</span></span>
+          <span><i class="fas fa-clock"></i> 6 min</span>
+        </div>
+        <h3 class="blog-title">
+          <span data-lang="fr" class="active">Rapport d'impact 2024 : 5 000 arbres sauvés</span>
+          <span data-lang="en">2024 Impact Report: 5,000 trees saved</span>
+          <span data-lang="sw">Ripoti ya Athari 2024: Miti 5,000 iliyookolewa</span>
+        </h3>
+        <p class="blog-excerpt">
+          <span data-lang="fr" class="active">Notre rapport annuel 2024 révèle un bilan environnemental positif: 5 000 arbres sauvés, 80 tonnes de CO₂ réduites et 120 tonnes de déchets recyclés.</span>
+          <span data-lang="en">Our 2024 annual report reveals a positive environmental balance: 5,000 trees saved, 80 tons of CO₂ reduced and 120 tons of waste recycled.</span>
+          <span data-lang="sw">Ripoti yetu ya mwaka 2024 inaonyesha matokeo mazuri ya mazingira: miti 5,000 iliyookolewa, tani 80 za CO₂ zilizopunguzwa.</span>
+        </p>
+        <a href="#blog" class="blog-read-more">
+          <span data-lang="fr" class="active">Lire la suite</span><span data-lang="en">Read more</span><span data-lang="sw">Soma zaidi</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TEAM ===== -->
+<section id="team">
+  <div class="section-header center">
+    <div class="section-label">
+      <span data-lang="fr" class="active">Les Personnes Derrière la Mission</span>
+      <span data-lang="en">The People Behind the Mission</span>
+      <span data-lang="sw">Watu Nyuma ya Dhamira</span>
+    </div>
+    <h2 class="section-title">
+      <span data-lang="fr" class="active">Notre <em>Équipe</em></span>
+      <span data-lang="en">Our <em>Team</em></span>
+      <span data-lang="sw">Timu <em>Yetu</em></span>
+    </h2>
+    <p class="section-desc">
+      <span data-lang="fr" class="active">Une équipe passionnée, engagée pour l'environnement et les communautés du Kivu.</span>
+      <span data-lang="en">A passionate team committed to the environment and communities of Kivu.</span>
+      <span data-lang="sw">Timu ya shauku, iliyojitolea kwa mazingira na jamii za Kivu.</span>
+    </p>
+  </div>
+  <div class="team-grid">
+    <div class="team-card reveal">
+      <div class="team-avatar">🌿</div>
+      <div class="team-name">Guido Murhula Zigabe</div>
+      <div class="team-role"><span data-lang="fr" class="active">Fondateur & Directeur</span><span data-lang="en">Founder & CEO</span><span data-lang="sw">Mwanzilishi & Mkurugenzi</span></div>
+      <p class="team-bio"><span data-lang="fr" class="active">Entrepreneur social avec une vision pour un Congo vert et prospère. Initiateur de Briquette du Kivu depuis 2020.</span><span data-lang="en">Social entrepreneur with a vision for a green and prosperous Congo. Founder of Briquette du Kivu since 2020.</span><span data-lang="sw">Mjasiriamali wa kijamii mwenye maono ya Kongo ya kijani. Mwanzilishi wa Briquette du Kivu tangu 2020.</span></p>
+      <div class="team-socials">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="team-card reveal">
+      <div class="team-avatar">♻️</div>
+      <div class="team-name">Marie Kasongo</div>
+      <div class="team-role"><span data-lang="fr" class="active">Directrice des Opérations</span><span data-lang="en">Operations Director</span><span data-lang="sw">Mkurugenzi wa Uendeshaji</span></div>
+      <p class="team-bio"><span data-lang="fr" class="active">Spécialiste en gestion des déchets et production durable, Marie supervise l'ensemble de la chaîne de production.</span><span data-lang="en">Specialist in waste management and sustainable production, Marie oversees the entire production chain.</span><span data-lang="sw">Mtaalamu wa usimamizi wa taka na uzalishaji endelevu, Marie anasimamia mnyororo wote wa uzalishaji.</span></p>
+      <div class="team-socials">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="team-card reveal">
+      <div class="team-avatar">🔬</div>
+      <div class="team-name">Jean-Pierre Bahati</div>
+      <div class="team-role"><span data-lang="fr" class="active">Responsable R&D</span><span data-lang="en">R&D Manager</span><span data-lang="sw">Mkuu wa Utafiti</span></div>
+      <p class="team-bio"><span data-lang="fr" class="active">Ingénieur chimiste passionné, Jean-Pierre développe et améliore continuellement nos formules de briquettes.</span><span data-lang="en">Passionate chemical engineer, Jean-Pierre continuously develops and improves our briquette formulas.</span><span data-lang="sw">Mhandisi wa kemikali mwenye shauku, Jean-Pierre huendeleza na kuboresha fomula zetu za briquettes.</span></p>
+      <div class="team-socials">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="team-card reveal">
+      <div class="team-avatar">🤝</div>
+      <div class="team-name">Amina Nabintu</div>
+      <div class="team-role"><span data-lang="fr" class="active">Responsable Partenariats</span><span data-lang="en">Partnerships Manager</span><span data-lang="sw">Msimamizi wa Ushirikiano</span></div>
+      <p class="team-bio"><span data-lang="fr" class="active">Experte en développement des affaires, Amina construit et entretient les relations avec nos partenaires locaux et internationaux.</span><span data-lang="en">Business development expert, Amina builds and maintains relationships with our local and international partners.</span><span data-lang="sw">Mtaalamu wa maendeleo ya biashara, Amina hujenga na kudumisha mahusiano na washirika wetu.</span></p>
+      <div class="team-socials">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PARTNERSHIPS ===== -->
+<section id="partnerships">
+  <div class="section-header center">
+    <div class="section-label">
+      <span data-lang="fr" class="active">Construire Ensemble</span>
+      <span data-lang="en">Building Together</span>
+      <span data-lang="sw">Kujenga Pamoja</span>
+    </div>
+    <h2 class="section-title">
+      <span data-lang="fr" class="active">Opportunités de <em>Partenariat</em></span>
+      <span data-lang="en"><em>Partnership</em> Opportunities</span>
+      <span data-lang="sw">Fursa za <em>Ushirikiano</em></span>
+    </h2>
+    <p class="section-desc">
+      <span data-lang="fr" class="active">Nous croyons que les partenariats sont essentiels pour maximiser notre impact. Découvrez comment collaborer avec Briquette du Kivu.</span>
+      <span data-lang="en">We believe partnerships are essential to maximizing our impact. Discover how to collaborate with Briquette du Kivu.</span>
+      <span data-lang="sw">Tunaamini ushirikiano ni muhimu kupanua athari yetu. Gundua jinsi ya kushirikiana na Briquette du Kivu.</span>
+    </p>
+  </div>
+  <div class="partnerships-grid">
+    <div class="partnership-card reveal">
+      <div class="partnership-icon">🏛️</div>
+      <div class="partnership-content">
+        <h3><span data-lang="fr" class="active">Institutions & ONG</span><span data-lang="en">Institutions & NGOs</span><span data-lang="sw">Taasisi & Mashirika</span></h3>
+        <p><span data-lang="fr" class="active">Partenariat pour des programmes d'accès à l'énergie propre, formations communautaires et projets de développement durable au Kivu et en RDC.</span><span data-lang="en">Partnership for clean energy access programs, community training and sustainable development projects in Kivu and DRC.</span><span data-lang="sw">Ushirikiano kwa programu za nishati safi, mafunzo ya jamii na miradi ya maendeleo endelevu huko Kivu.</span></p>
+      </div>
+    </div>
+    <div class="partnership-card reveal">
+      <div class="partnership-icon">🏢</div>
+      <div class="partnership-content">
+        <h3><span data-lang="fr" class="active">Entreprises & Investisseurs</span><span data-lang="en">Companies & Investors</span><span data-lang="sw">Makampuni & Wawekezaji</span></h3>
+        <p><span data-lang="fr" class="active">Investissement à impact social et environnemental, distribution à grande échelle ou intégration de notre modèle dans votre stratégie RSE.</span><span data-lang="en">Social and environmental impact investment, large-scale distribution or integration of our model into your CSR strategy.</span><span data-lang="sw">Uwekezaji wa athari ya kijamii na kimazingira, usambazaji mkubwa au ujumuishaji wa mfano wetu katika mkakati wako.</span></p>
+      </div>
+    </div>
+    <div class="partnership-card reveal">
+      <div class="partnership-icon">🎓</div>
+      <div class="partnership-content">
+        <h3><span data-lang="fr" class="active">Universités & Recherche</span><span data-lang="en">Universities & Research</span><span data-lang="sw">Vyuo & Utafiti</span></h3>
+        <p><span data-lang="fr" class="active">Collaborations de recherche sur les énergies renouvelables, la gestion des déchets et le développement durable en contexte africain.</span><span data-lang="en">Research collaborations on renewable energy, waste management and sustainable development in the African context.</span><span data-lang="sw">Ushirikiano wa utafiti kuhusu nishati mbadala, usimamizi wa taka na maendeleo endelevu katika mazingira ya Afrika.</span></p>
+      </div>
+    </div>
+    <div class="partnership-card reveal">
+      <div class="partnership-icon">🌍</div>
+      <div class="partnership-content">
+        <h3><span data-lang="fr" class="active">Distributeurs Régionaux</span><span data-lang="en">Regional Distributors</span><span data-lang="sw">Wasambazaji wa Kanda</span></h3>
+        <p><span data-lang="fr" class="active">Rejoignez notre réseau de distribution au Kivu, dans les Grands Lacs africains et au-delà. Devenez le moteur de la transition énergétique dans votre région.</span><span data-lang="en">Join our distribution network in Kivu, the African Great Lakes region and beyond. Become the engine of energy transition in your region.</span><span data-lang="sw">Jiunge na mtandao wetu wa usambazaji huko Kivu, Maziwa Makubwa ya Afrika na zaidi. Kuwa injini ya mabadiliko ya nishati katika eneo lako.</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="partnership-cta reveal">
+    <h3><span data-lang="fr" class="active">Prêt à nous rejoindre ?</span><span data-lang="en">Ready to join us?</span><span data-lang="sw">Tayari kujiunga nasi?</span></h3>
+    <p><span data-lang="fr" class="active">Contactez-nous pour discuter d'une collaboration sur mesure. Ensemble, amplifions notre impact pour les communautés et la planète.</span><span data-lang="en">Contact us to discuss a tailored collaboration. Together, let's amplify our impact for communities and the planet.</span><span data-lang="sw">Wasiliana nasi kujadili ushirikiano uliobinafsishwa. Pamoja, tupanue athari yetu kwa jamii na sayari.</span></p>
+    <a href="#contact" class="btn btn-white">
+      <i class="fas fa-handshake"></i>
+      <span data-lang="fr" class="active">Discuter d'un Partenariat</span>
+      <span data-lang="en">Discuss a Partnership</span>
+      <span data-lang="sw">Jadili Ushirikiano</span>
+    </a>
+  </div>
+</section>
+
+<!-- ===== RECONNAISSANCE INTERNATIONALE & CERTIFICATS ===== -->
+<section id="reconnaissance">
+  <div class="section-header center" style="max-width:1200px; margin: 0 auto 56px;">
+    <div class="section-label" style="justify-content:center; color: var(--green-light);">
+      <span data-lang="fr" class="active">Reconnus & Certifiés</span>
+      <span data-lang="en">Recognized & Certified</span>
+      <span data-lang="sw">Kutambuliwa & Kuthibitishwa</span>
+    </div>
+    <h2 class="section-title" style="color:#fff;">
+      <span data-lang="fr" class="active">Reconnaissance Internationale & <em style="color:var(--green-light)">Certificats Scientifiques</em></span>
+      <span data-lang="en">International Recognition & <em style="color:var(--green-light)">Scientific Certificates</em></span>
+      <span data-lang="sw">Utambuzi wa Kimataifa & <em style="color:var(--green-light)">Vyeti vya Kisayansi</em></span>
+    </h2>
+    <p class="section-desc" style="color:rgba(255,255,255,0.7); margin: 0 auto;">
+      <span data-lang="fr" class="active">Nos efforts sont reconnus à l'échelle internationale et validés par des études scientifiques indépendantes.</span>
+      <span data-lang="en">Our efforts are recognized internationally and validated by independent scientific studies.</span>
+      <span data-lang="sw">Juhudi zetu zinatambuliwa kimataifa na kuthibitishwa na tafiti huru za kisayansi.</span>
+    </p>
+  </div>
+
+  <div style="max-width:1200px; margin: 0 auto 56px;">
+    <h3 style="color:rgba(255,255,255,0.5); font-size:0.8rem; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:28px; text-align:center;">
+      <span data-lang="fr" class="active">— Prix & Distinctions —</span>
+      <span data-lang="en">— Awards & Distinctions —</span>
+      <span data-lang="sw">— Tuzo & Utambuzi —</span>
+    </h3>
+    <div class="recon-grid">
+      <div class="recon-card reveal">
+        <div class="recon-badge">🏆 <span data-lang="fr" class="active">Prix</span><span data-lang="en">Award</span><span data-lang="sw">Tuzo</span></div>
+        <div class="recon-title"><span data-lang="fr" class="active">Prix Africa Green Innovation</span><span data-lang="en">Africa Green Innovation Award</span><span data-lang="sw">Tuzo ya Africa Green Innovation</span></div>
+        <div class="recon-org">Africa Climate Foundation</div>
+        <p class="recon-desc"><span data-lang="fr" class="active">Récompensé pour notre modèle d'économie circulaire innovant qui transforme les déchets organiques en source d'énergie propre accessible.</span><span data-lang="en">Awarded for our innovative circular economy model that transforms organic waste into accessible clean energy.</span><span data-lang="sw">Tulipatia tuzo kwa mfano wetu wa ubunifu wa uchumi wa mzunguko unaobadilisha taka za kikaboni.</span></p>
+        <span class="recon-year">2024</span>
+      </div>
+      <div class="recon-card reveal">
+        <div class="recon-badge">🌍 <span data-lang="fr" class="active">Finaliste</span><span data-lang="en">Finalist</span><span data-lang="sw">Mwisho</span></div>
+        <div class="recon-title"><span data-lang="fr" class="active">ONU Environnement – Solutions Vertes</span><span data-lang="en">UN Environment – Green Solutions</span><span data-lang="sw">Mazingira ya UN – Masuluhisho ya Kijani</span></div>
+        <div class="recon-org">United Nations Environment Programme</div>
+        <p class="recon-desc"><span data-lang="fr" class="active">Finaliste du programme UNEP Young Champions of the Earth pour l'Afrique sub-saharienne — reconnu comme une solution scalable à la déforestation.</span><span data-lang="en">Finalist of the UNEP Young Champions of the Earth program for sub-Saharan Africa — recognized as a scalable solution to deforestation.</span><span data-lang="sw">Mwisho wa programu ya UNEP Young Champions of the Earth kwa Afrika Kusini mwa Sahara.</span></p>
+        <span class="recon-year">2023</span>
+      </div>
+      <div class="recon-card reveal">
+        <div class="recon-badge">⭐ <span data-lang="fr" class="active">Distinction</span><span data-lang="en">Recognition</span><span data-lang="sw">Utambuzi</span></div>
+        <div class="recon-title"><span data-lang="fr" class="active">Meilleure Startup Sociale – Grands Lacs</span><span data-lang="en">Best Social Startup – Great Lakes</span><span data-lang="sw">Startup Bora ya Kijamii – Maziwa Makubwa</span></div>
+        <div class="recon-org">Forum Économique des Grands Lacs</div>
+        <p class="recon-desc"><span data-lang="fr" class="active">Reconnue comme la meilleure startup sociale lors du Forum Économique des Grands Lacs pour son impact sur les communautés vulnérables du Kivu.</span><span data-lang="en">Recognized as the best social startup at the Great Lakes Economic Forum for its impact on vulnerable communities in Kivu.</span><span data-lang="sw">Ilitambuliwa kama startup bora ya kijamii katika Jukwaa la Uchumi la Maziwa Makubwa.</span></p>
+        <span class="recon-year">2023</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width:1200px; margin: 0 auto;">
+    <h3 style="color:rgba(255,255,255,0.5); font-size:0.8rem; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:28px; text-align:center;">
+      <span data-lang="fr" class="active">— Certificats & Études Scientifiques —</span>
+      <span data-lang="en">— Scientific Certificates & Studies —</span>
+      <span data-lang="sw">— Vyeti & Tafiti za Kisayansi —</span>
+    </h3>
+    <div class="certif-grid">
+      <div class="certif-card reveal">
+        <div class="certif-icon">🧪</div>
+        <div class="certif-name"><span data-lang="fr" class="active">Analyse de Composition</span><span data-lang="en">Composition Analysis</span><span data-lang="sw">Uchambuzi wa Muundo</span></div>
+        <p class="certif-body"><span data-lang="fr" class="active">Étude indépendante certifiant la composition et la qualité énergétique de nos briquettes – Université de Bukavu, 2023.</span><span data-lang="en">Independent study certifying the composition and energy quality of our briquettes – University of Bukavu, 2023.</span><span data-lang="sw">Utafiti huru unaothibitisha muundo na ubora wa nishati wa briquettes zetu – Chuo Kikuu cha Bukavu, 2023.</span></p>
+      </div>
+      <div class="certif-card reveal">
+        <div class="certif-icon">🌫️</div>
+        <div class="certif-name"><span data-lang="fr" class="active">Réduction des Émissions CO₂</span><span data-lang="en">CO₂ Emissions Reduction</span><span data-lang="sw">Kupunguza Uzalishaji wa CO₂</span></div>
+        <p class="certif-body"><span data-lang="fr" class="active">Rapport certifiant une réduction de 40% des émissions de gaz à effet de serre comparé au charbon traditionnel – CIFOR, 2024.</span><span data-lang="en">Report certifying a 40% reduction in greenhouse gas emissions compared to traditional charcoal – CIFOR, 2024.</span><span data-lang="sw">Ripoti inayothibitisha upunguzaji wa 40% wa gesi chafu ikilinganishwa na mkaa wa kawaida – CIFOR, 2024.</span></p>
+      </div>
+      <div class="certif-card reveal">
+        <div class="certif-icon">🏥</div>
+        <div class="certif-name"><span data-lang="fr" class="active">Impact Sanitaire</span><span data-lang="en">Health Impact</span><span data-lang="sw">Athari ya Afya</span></div>
+        <p class="certif-body"><span data-lang="fr" class="active">Étude épidémiologique prouvant la réduction des maladies respiratoires chez les familles utilisatrices – OMS partenaire, 2024.</span><span data-lang="en">Epidemiological study proving the reduction of respiratory diseases among user families – WHO partner study, 2024.</span><span data-lang="sw">Utafiti wa epidemiolojia unaothibitisha upunguzaji wa magonjwa ya kupumua kwa familia zinazotumia bidhaa zetu – 2024.</span></p>
+      </div>
+      <div class="certif-card reveal">
+        <div class="certif-icon">🌱</div>
+        <div class="certif-name"><span data-lang="fr" class="active">Certification Éco-responsable</span><span data-lang="en">Eco-responsible Certification</span><span data-lang="sw">Cheti cha Utekelezaji wa Mazingira</span></div>
+        <p class="certif-body"><span data-lang="fr" class="active">Certification ISO 14001 en cours d'obtention – audit environnemental confirmant nos pratiques durables de production et gestion des déchets.</span><span data-lang="en">ISO 14001 certification in progress – environmental audit confirming our sustainable production and waste management practices.</span><span data-lang="sw">Uthibitisho wa ISO 14001 unaoendelea – ukaguzi wa mazingira unaothibitisha mazoea yetu endelevu ya uzalishaji.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo" style="margin-bottom: 12px;">
+        <div class="nav-logo-icon">🌿</div>
+        <div class="nav-logo-text">Briquette<br><span>du Kivu</span></div>
+      </div>
+      <p data-lang="fr" class="active">Transformer les déchets en énergie propre pour lutter contre la déforestation et le changement climatique en RD Congo.</p>
+      <p data-lang="en">Transforming waste into clean energy to fight deforestation and climate change in DR Congo.</p>
+      <p data-lang="sw">Kubadilisha taka kuwa nishati safi kupambana na ukataji miti na mabadiliko ya tabianchi nchini DRC.</p>
+      <div class="social-links">
+        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/243000000000" class="social-link" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4 data-lang="fr" class="active">Navigation</h4>
+      <h4 data-lang="en">Navigation</h4>
+      <h4 data-lang="sw">Urambazaji</h4>
+      <ul>
+        <li><a href="#home" data-lang="fr" class="active">Accueil</a><a href="#home" data-lang="en">Home</a><a href="#home" data-lang="sw">Nyumbani</a></li>
+        <li><a href="#about" data-lang="fr" class="active">À Propos</a><a href="#about" data-lang="en">About</a><a href="#about" data-lang="sw">Kuhusu</a></li>
+        <li><a href="#products" data-lang="fr" class="active">Produits</a><a href="#products" data-lang="en">Products</a><a href="#products" data-lang="sw">Bidhaa</a></li>
+        <li><a href="#impact" data-lang="fr" class="active">Impact</a><a href="#impact" data-lang="en">Impact</a><a href="#impact" data-lang="sw">Athari</a></li>
+        <li><a href="#blog" data-lang="fr" class="active">Blog</a><a href="#blog" data-lang="en">Blog</a><a href="#blog" data-lang="sw">Blogu</a></li>
+        <li><a href="#team" data-lang="fr" class="active">Équipe</a><a href="#team" data-lang="en">Team</a><a href="#team" data-lang="sw">Timu</a></li>
+        <li><a href="#partnerships" data-lang="fr" class="active">Partenariats</a><a href="#partnerships" data-lang="en">Partnerships</a><a href="#partnerships" data-lang="sw">Ushirikiano</a></li>
+        <li><a href="#reconnaissance" data-lang="fr" class="active">Reconnaissance</a><a href="#reconnaissance" data-lang="en">Recognition</a><a href="#reconnaissance" data-lang="sw">Utambuzi</a></li>
+        <li><a href="#gallery" data-lang="fr" class="active">Galerie</a><a href="#gallery" data-lang="en">Gallery</a><a href="#gallery" data-lang="sw">Picha</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 data-lang="fr" class="active">Services</h4>
+      <h4 data-lang="en">Services</h4>
+      <h4 data-lang="sw">Huduma</h4>
+      <ul>
+        <li><a href="#products" data-lang="fr" class="active">Briquettes écologiques</a><a href="#products" data-lang="en">Eco Briquettes</a><a href="#products" data-lang="sw">Briquettes za Kimazingira</a></li>
+        <li><a href="#products" data-lang="fr" class="active">Collecte de déchets</a><a href="#products" data-lang="en">Waste Collection</a><a href="#products" data-lang="sw">Ukusanyaji wa Taka</a></li>
+        <li><a href="#products" data-lang="fr" class="active">Formations</a><a href="#products" data-lang="en">Training</a><a href="#products" data-lang="sw">Mafunzo</a></li>
+        <li><a href="#partners" data-lang="fr" class="active">Partenariats</a><a href="#partners" data-lang="en">Partnerships</a><a href="#partners" data-lang="sw">Ushirikiano</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 data-lang="fr" class="active">Contact</h4>
+      <h4 data-lang="en">Contact</h4>
+      <h4 data-lang="sw">Mawasiliano</h4>
+      <ul>
+        <li><a href="#">📍 Bukavu, Sud-Kivu, RDC</a></li>
+        <li><a href="https://wa.me/243000000000">📱 +243 000 000 000</a></li>
+        <li><a href="mailto:contact@briquetteduKivu.cd">✉️ contact@briquetteduKivu.cd</a></li>
+        <li><a href="#" data-lang="fr" class="active">⏰ Lun–Sam 8h–18h</a><a href="#" data-lang="en">⏰ Mon–Sat 8am–6pm</a><a href="#" data-lang="sw">⏰ Jtu–Jmo 8–18</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span data-lang="fr" class="active">© 2024 Briquette du Kivu. Tous droits réservés. Fait avec 💚 à Bukavu.</span>
+    <span data-lang="en">© 2024 Briquette du Kivu. All rights reserved. Made with 💚 in Bukavu.</span>
+    <span data-lang="sw">© 2024 Briquette du Kivu. Haki zote zimehifadhiwa. Iliyotengenezwa na 💚 Bukavu.</span>
+    <span>
+      <span data-lang="fr" class="active">Fondé par</span>
+      <span data-lang="en">Founded by</span>
+      <span data-lang="sw">Ilianzishwa na</span>
+      <a href="#about"> Guido Murhula Zigabe</a>
+    </span>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/243000000000?text=Bonjour%20Briquette%20du%20Kivu%20!" target="_blank" class="wa-float">
+  <i class="fab fa-whatsapp"></i>
+  <span class="wa-text" data-lang="fr" style="display:inline;">Commandez sur WhatsApp</span>
+  <span class="wa-text" data-lang="en">Order on WhatsApp</span>
+  <span class="wa-text" data-lang="sw">Agiza WhatsApp</span>
+</a>
+
+<script type="module" src="js/main.js"></script>
+<script type="module" src="js/blog.js"></script>
+</body>
+</html>
